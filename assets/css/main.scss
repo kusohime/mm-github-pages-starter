@@ -1,4 +1,4 @@
-// 字体设定（全站统一为 Helvetica）
+// Helvetica 字体
 $global-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $header-font-family: $global-font-family;
 
@@ -6,15 +6,25 @@ $header-font-family: $global-font-family;
 $background-color: #ffffff;
 $text-color: #111111;
 $link-color: #000000;
-$primary-color: #000000; // 按钮等交互主色
+$primary-color: #000000;
 
-// 取消灰边框等视觉杂项
-$border-color: #e0e0e0;
+// 去掉灰边、阴影、圆角等“杂项装饰”
+$border-color: #ffffff;
+$border-radius: 0;
+$box-shadow: none;
 
-// 适度增大字距和行高，增加“留白感”
-$body-line-height: 1.75;
-$paragraph-margin-bottom: 1.25em;
+// 提高留白感
+$body-line-height: 1.8;
+$paragraph-margin-bottom: 1.5em;
 $heading-line-height: 1.4;
+$content-padding: 2rem;
 
-// 引入原始主题核心
+// 调整代码框背景色（也变白）
+$code-background-color: #f9f9f9;
+$code-border-color: #eaeaea;
+
+// 移除标题下横线
+$heading-border-bottom: none;
+
+// 引入原始样式
 @import "minimal-mistakes";
